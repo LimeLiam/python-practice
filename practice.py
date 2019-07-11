@@ -1,4 +1,6 @@
 import string
+
+#1
 #(0°C × 9/5) + 32 = 32°F
 def CToF():
     c = -40
@@ -10,14 +12,17 @@ def FToC():
     c = (f - 32) * 5 / 9
     return c
 
+#2
 def addFunction(x, y, z):
     return x + y + z
 
+#3
 def counter(n):
     while n > 1:
         return n
         n -=1
 
+#4
 def maxNums(a, b ,c):
     if a > b:
         if a > c:
@@ -28,7 +33,7 @@ def maxNums(a, b ,c):
         return c
     else:
         return b
-
+#5
 def tri(side1, side2, side3):
     if side1 == side2 == side3:
         return "That's an equilateral triangle!"
@@ -36,7 +41,7 @@ def tri(side1, side2, side3):
         return "That's an isosceles triangle!"
     else:
         return "That's a scalene triangle!"
-
+#6
 def median(a, b, c):
     if a > b > c or c > b > a:
         return b;
@@ -45,12 +50,14 @@ def median(a, b, c):
     elif a > c > b or b > c > a:
         return c;
 
+#7
 def sumFunction(x):
     total = 0
     for a in x:
         total += a
     return total
 
+#8
 def avgFunction(x):
     total = 0
     for a in x:
@@ -59,6 +66,7 @@ def avgFunction(x):
     total /= y
     return total
 
+#9
 def nSquares(n):
     ls = []
     x = 1
@@ -67,6 +75,7 @@ def nSquares(n):
         x += 1
     return ls
 
+#10
 def isIn(x, y): # x is the character being looked for, y is the list
     for i in y:
         if i == x:
@@ -74,6 +83,7 @@ def isIn(x, y): # x is the character being looked for, y is the list
     else:
         return False
 
+#11
 def charCount(x):
     letters = 0
     numbers = 0
@@ -86,6 +96,7 @@ def charCount(x):
             continue
     return (letters, numbers)
 
+#12
 def oddNums(x):
     oddNumbers = 0 #The number of odd numbers
     for i in x: #For each item in the list x
@@ -93,6 +104,7 @@ def oddNums(x):
             oddNumbers += 1
     return oddNumbers
 
+#13
 def password(password):
     upper = 0 #At least one
     lower = 0 #At least one
@@ -114,7 +126,7 @@ def password(password):
     else:
         return "Invalid password! Your password must have at least 1 uppercase, 1 lowercase, 1 number, and must be between 8 and 32 characters."
 
-
+#14
 def revTerm(x):
     y = -1
     revStr = "" #creates empty string to later append to
@@ -123,12 +135,14 @@ def revTerm(x):
         y-=1
     return revStr
 
+#15
 def tacocat(palindrome):
     if revTerm(palindrome) == palindrome:
         return True
     else:
         return False
 
+#16
 def lazyDog(pangram):# subscribe to Pew Die Pie
     pg = pangram.lower()#turns everything lowercase
     for i in string.ascii_lowercase:
