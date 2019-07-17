@@ -170,11 +170,6 @@ def isPrime(n):
             return True
         else:
             return False
-#20
-def  perfection(n):
-    if n>0:
-        for  
-        
 
 """99 reports of bugs in the code, 99 reports of bugs!
 Take one down fix it around, 144 bugs in the code!
